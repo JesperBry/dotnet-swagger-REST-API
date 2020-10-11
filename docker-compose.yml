@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  restapi:
+    image: ${DOCKER_REGISTRY-}restapi
+    build:
+      context: .
+      dockerfile: restAPI/Dockerfile
+    restart: always
+    ports:
+        - "8000:80"
+    environment:
+        - DB_UserId
+        - DB_PW
+    depends_on:
+        - db-server
+
+  db-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: db-server
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "${DB_PW}"
+    ports:
+        - "1433:1433"

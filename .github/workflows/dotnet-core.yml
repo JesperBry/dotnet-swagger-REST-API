@@ -19,3 +19,4 @@ jobs:
         dotnet-version: 3.1.401
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      working-directory: .\restAPI

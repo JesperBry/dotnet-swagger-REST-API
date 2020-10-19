@@ -1,7 +1,7 @@
 [![Build status](https://github.com/JesperBry/JesperBry-patch-1/workflows/dotnet-core.yml/badge.svg)](https://github.com/JesperBry/dotnet-swagger-REST-API/actions)
 # dotnet-swagger-REST-API
 
-## Createing local HTTPS certificate
+## Creating local HTTPS certificate
 ```
 dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\restAPI.pfx -p <password>
 dotnet dev-cert https --trust

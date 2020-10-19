@@ -1,1 +1,28 @@
+[![Build status](https://github.com/JesperBry/JesperBry-patch-1/workflows/dotnet-core.yml/badge.svg)](https://github.com/JesperBry/dotnet-swagger-REST-API/actions)
 # dotnet-swagger-REST-API
+
+## Createing local HTTPS certificate
+```
+dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\restAPI.pfx -p <password>
+dotnet dev-cert https --trust
+dotnet user-secrets set "Kestrel:Certificates:Development:Password" "<password>"
+```
+
+## Building with Docker-compose
+
+Make sure docker is installed and that a local HTTPS certificate is added to user-secrets
+
+Then run:
+```
+docker-compose build
+docker-compose up
+```
+
+Available on https://localhost:8001/swagger/index.html/
+
+## Run without Docker
+```
+cd /restAPI
+dotnet run
+```
+Available on https://localhost:5001/swagger/index.html/

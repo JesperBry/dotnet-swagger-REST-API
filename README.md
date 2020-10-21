@@ -1,4 +1,7 @@
-[![Build status](https://github.com/JesperBry/dotnet%2Dswagger%2DREST%2DAPI/workflows/dotnet%2Dcore.yml/badge.svg)](https://github.com/JesperBry/dotnet%2Dswagger%2DREST%2DAPI/actions)
+<a href="https://github.com/JesperBry/dotnet%2Dswagger%2DREST%2DAPI/actions">
+  <img alt="Build status" src="https://github.com/JesperBry/dotnet%2Dswagger%2DREST%2DAPI/workflows/.NET%20Core/badge.svg" />
+</a>
+
 # dotnet-swagger-REST-API
 
 ## Creating local HTTPS certificate

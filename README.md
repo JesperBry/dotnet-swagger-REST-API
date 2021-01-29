@@ -21,11 +21,11 @@ docker-compose build
 docker-compose up
 ```
 
-Available on https://localhost:8001/swagger/index.html/
+Available on https://localhost:8001/swagger/index.html
 
 ## Run without Docker
 ```
 cd /restAPI
 dotnet run
 ```
-Available on https://localhost:5001/swagger/index.html/
+Available on https://localhost:5001/swagger/index.html
